@@ -7,6 +7,10 @@
     @include medium {
         grid-area: 2;
     }
+    @include xlarge{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     article:first-child {
         font-family: 'DM Serif Display', serif;

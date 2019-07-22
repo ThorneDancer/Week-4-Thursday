@@ -329,6 +329,10 @@ a:link, a:visited {
   display: grid;
   grid-template-areas: ". content .";
   grid-template-columns: 10px auto 10px; }
+  @media (min-width: 1145px) {
+    .project-grid {
+      grid-template-areas: ". content .";
+      grid-template-columns: auto 1145px auto; } }
   .project-grid > div {
     grid-area: content; }
 
@@ -337,6 +341,10 @@ a:link, a:visited {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0; } }
+
+@media (min-width: 1145px) {
+  .weekly-grid {
+    display: block; } }
 
 .weekly-grid #weekly-1 {
   grid-column: 1 / 2; }
@@ -494,6 +502,9 @@ footer ul {
     @media (min-width: 938px) {
       #hero article:first-child {
         padding-top: 190px; } }
+    @media (min-width: 1145px) {
+      #hero article:first-child {
+        padding-top: 300px; } }
     #hero article:first-child > h2 {
       font-size: 1.875rem; }
       @media (min-width: 713px) {
@@ -517,6 +528,9 @@ footer ul {
         #hero article:first-child h2 + h1 {
           font-size: 4.25rem;
           margin-bottom: 280px; } }
+      @media (min-width: 1145px) {
+        #hero article:first-child h2 + h1 {
+          margin-bottom: 600px; } }
   #hero article:nth-child(2) {
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
@@ -607,6 +621,9 @@ footer ul {
     @media (min-width: 938px) {
       #basics > article {
         height: 520px; } }
+    @media (min-width: 1145px) {
+      #basics > article {
+        height: 650px; } }
     #basics > article h1 {
       color: #F71818;
       font-family: 'Satisfy', cursive;
@@ -626,6 +643,10 @@ footer ul {
         display: grid;
         grid-template-areas: ". left-1 . right-1 ." ". left-2 . right-2 .";
         grid-template-columns: 5% auto 5% auto 5%; } }
+    @media (min-width: 1145px) {
+      #basics ul {
+        padding: 60px 0;
+        grid-template-columns: auto 500px auto 500px auto; } }
     @media (min-width: 713px) {
       #basics ul li:nth-child(1) {
         grid-area: left-1; } }
@@ -703,6 +724,11 @@ footer ul {
   @media (min-width: 713px) {
     #weekly-1 {
       grid-area: 1; } }
+  @media (min-width: 1145px) {
+    #weekly-1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "img content"; } }
   #weekly-1 > aside {
     align-items: center;
     background-image: url("../img/bestiary/nightwalker.png");
@@ -723,6 +749,9 @@ footer ul {
     @media (min-width: 938px) {
       #weekly-1 > aside {
         height: 780px; } }
+    @media (min-width: 1145px) {
+      #weekly-1 > aside {
+        height: 1180px; } }
     #weekly-1 > aside h1 {
       font-size: 1.5rem;
       font-weight: 400;
@@ -739,6 +768,9 @@ footer ul {
       @media (min-width: 938px) {
         #weekly-1 > aside h2 {
           font-size: 2.375rem; } }
+  @media (min-width: 1145px) {
+    #weekly-1 div {
+      padding: 40% 15% 0; } }
   #weekly-1 div > p {
     font-size: 0.875rem;
     line-height: 1.125rem;
@@ -752,6 +784,10 @@ footer ul {
       #weekly-1 div > p {
         font-size: 1.25rem;
         line-height: 1.375rem; } }
+    @media (min-width: 1145px) {
+      #weekly-1 div > p {
+        font-size: 1.6875rem;
+        line-height: 1.8125rem; } }
   #weekly-1 div article {
     padding: 0 10px;
     text-align: justify; }
@@ -764,6 +800,10 @@ footer ul {
         font-size: 1.5rem;
         font-weight: 300;
         line-height: 1.375rem; } }
+    @media (min-width: 1145px) {
+      #weekly-1 div article {
+        font-size: 1.8125rem;
+        line-height: 1.8125rem; } }
     #weekly-1 div article p:first-child {
       padding-bottom: 20px; }
 
@@ -1143,6 +1183,10 @@ footer ul {
   @media (min-width: 713px) {
     #weekly-2 {
       grid-area: 2; } }
+  @media (min-width: 1145px) {
+    #weekly-2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); } }
   #weekly-2 article:first-child {
     font-family: 'DM Serif Display', serif;
     margin-top: 20px;

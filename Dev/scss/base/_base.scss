@@ -24,6 +24,10 @@ a:link, a:visited{
     display: grid;
     grid-template-areas: ". content .";
     grid-template-columns: 10px auto 10px;
+    @include xlarge{
+        grid-template-areas: ". content .";
+        grid-template-columns: auto 1145px auto;
+    }
     >div{
         grid-area: content;
     }
@@ -34,6 +38,9 @@ a:link, a:visited{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 0;
+    }
+    @include xlarge{
+        display: block;
     }
     #weekly-1{
         grid-column: 1 / 2;

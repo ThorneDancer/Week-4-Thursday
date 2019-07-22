@@ -21,6 +21,9 @@
         @include large {
             height: 520px;
         }
+        @include xlarge{
+            height: 650px;
+        }
 
         h1 {
             color: $secondary;
@@ -43,6 +46,10 @@
             display: grid;
             grid-template-areas: ". left-1 . right-1 ." ". left-2 . right-2 .";
             grid-template-columns: 5% auto 5% auto 5%;
+        }
+        @include xlarge{
+            padding: 60px 0;
+            grid-template-columns: auto 500px auto 500px auto;
         }
 
         li:nth-child(1) {

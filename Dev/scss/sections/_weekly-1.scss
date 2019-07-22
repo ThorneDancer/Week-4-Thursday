@@ -6,6 +6,11 @@
     @include medium {
         grid-area: 1;
     }
+    @include xlarge{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "img content";
+    }
 
     > aside {
         align-items: center;
@@ -26,6 +31,9 @@
         }
         @include large {
             height: 780px;
+        }
+        @include xlarge{
+            height: 1180px;
         }
 
         h1 {
@@ -50,6 +58,9 @@
     }
 
     div {
+        @include xlarge{
+            padding: 40% 15% 0;
+        }
         > p {
             font-size: rem-calc(14);
             line-height: rem-calc(18);
@@ -62,6 +73,10 @@
             @include large {
                 font-size: rem-calc(20);
                 line-height: rem-calc(22);
+            }
+            @include xlarge{
+                font-size: rem-calc(27);
+                line-height: rem-calc(29);
             }
         }
 
@@ -76,6 +91,10 @@
                 font-size: rem-calc(24);
                 font-weight: 300;
                 line-height: rem-calc(22);
+            }
+            @include xlarge{
+                font-size: rem-calc(29);
+                line-height: rem-calc(29);
             }
 
             p:first-child {

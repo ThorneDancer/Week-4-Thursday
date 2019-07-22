@@ -22,6 +22,9 @@
         @include large {
             padding-top: 190px;
         }
+        @include xlarge{
+            padding-top: 300px;
+        }
 
         > h2 {
             font-size: rem-calc(30);
@@ -47,6 +50,9 @@
             @include large {
                 font-size: rem-calc(68);
                 margin-bottom: 280px;
+            }
+            @include xlarge{
+                margin-bottom: 600px;
             }
         }
     }
